@@ -1,0 +1,19 @@
+@import "reset-styles";
+
+body{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.marathon-header{
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+}
