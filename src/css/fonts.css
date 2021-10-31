@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'lucidagrande';
+  src: url("../fonts/lucidagrande_bold.woff2") format("woff2"), url("../fonts/lucidagrande_bold.woff") format("woff"), url("../fonts/lucidagrande_bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'lucidagrande';
+  src: url("../fonts//lucidagrande.woff2") format("woff2"), url("../fonts/lucidagrande.woff") format("woff"), url("../fonts/lucidagrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'proximanova';
+  src: url("../fonts/proximanova-light.woff2") format("woff2"), url("../fonts/proximanova-light.woff") format("woff"), url("../fonts/proximanova-light.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+/*# sourceMappingURL=fonts.css.map */

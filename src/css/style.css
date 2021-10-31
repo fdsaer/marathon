@@ -30,15 +30,220 @@ button {
   border: none;
 }
 
-body {
-  max-width: 1080px;
-  margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+@font-face {
+  font-family: 'lucidagrande';
+  src: url("../fonts/lucidagrande_bold.woff2") format("woff2"), url("../fonts/lucidagrande_bold.woff") format("woff"), url("../fonts/lucidagrande_bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 700;
 }
 
-.marathon-header__list {
+@font-face {
+  font-family: 'lucidagrande';
+  src: url("../fonts//lucidagrande.woff2") format("woff2"), url("../fonts/lucidagrande.woff") format("woff"), url("../fonts/lucidagrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'proximanova';
+  src: url("../fonts/proximanova-light.woff2") format("woff2"), url("../fonts/proximanova-light.woff") format("woff"), url("../fonts/proximanova-light.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-info__img {
+  height: 83vh;
+  padding: 150px;
+}
+
+.about-info__title {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.about-info__list {
+  position: relative;
+}
+
+.about-info__item {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+  margin-top: 30px;
+}
+
+.about-info__item::before {
+  content: "";
+  top: 12px;
+  width: 15px;
+  height: 15px;
+  left: -38px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #569d59;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "proximanova", sans-serif;
+}
+
+.marathon-header {
+  width: 100%;
+  height: 90px;
+  left: 0;
+  top: 0;
+  padding: 0 320px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marathon-header__logo {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.marathon-header .nav-header__list {
   display: flex;
   justify-content: space-between;
+}
+
+.marathon-header .nav-header__item {
+  margin-right: 40px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #111;
+}
+
+.marathon-header .nav-header__link {
+  font-family: "proximanova", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+}
+
+.marathon-header .nav-header__link:hover {
+  color: #757575;
+  transition-duration: 0.4s;
+}
+
+.marathon-main .face-info {
+  max-width: 1040px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/designer-coder.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.marathon-main .face-info__img {
+  order: 2;
+}
+
+.marathon-main .face-info__left {
+  width: 350px;
+}
+
+.marathon-main .face-info__title {
+  display: block;
+  font-size: 80px;
+  font-weight: 600;
+  color: #333333;
+  align-items: center;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.marathon-main .face-info__txt {
+  width: 300px;
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+.marathon-main__title {
+  max-width: 1040px;
+  margin: 0 auto;
+  height: 60px;
+  margin-bottom: 120px;
+  color: #757575;
+  text-align: center;
+  position: relative;
+}
+
+.marathon-main__title::before {
+  content: "";
+  top: 20%;
+  left: 0;
+  width: 380px;
+  border-bottom: 1px solid #dddddd;
+  position: absolute;
+}
+
+.marathon-main__title::after {
+  content: "";
+  top: 20%;
+  right: 0;
+  width: 380px;
+  border-bottom: 1px solid #dddddd;
+  position: absolute;
+}
+
+.marathon-main__card {
+  display: flex;
+}
+
+.marathon-main__link {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marathon-main__img {
+  height: 100%;
+  transition-duration: .9s;
+}
+
+.marathon-main__img:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+
+.marathon-main__right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.marathon-main__txt {
+  font-size: 22px;
+  color: #fff;
+}
+
+.marathon-footer {
+  height: 90px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
 }
 /*# sourceMappingURL=style.css.map */

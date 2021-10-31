@@ -1,0 +1,38 @@
+.about-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-info__img {
+  height: 83vh;
+  padding: 150px;
+}
+
+.about-info__title {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.about-info__list {
+  position: relative;
+}
+
+.about-info__item {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+  margin-top: 30px;
+}
+
+.about-info__item::before {
+  content: "";
+  top: 12px;
+  width: 15px;
+  height: 15px;
+  left: -38px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #569d59;
+}
+/*# sourceMappingURL=about-style.css.map */

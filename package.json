@@ -1,0 +1,31 @@
+{
+  "name": "marathon",
+  "version": "1.0.0",
+  "description": "Великий Frontend марафон",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx webpack --mode development",
+    "build": "npx webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoStooop/marathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoStooop/marathon/issues"
+  },
+  "homepage": "https://github.com/JoStooop/marathon#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.4.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.4.0",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
+  }
+}

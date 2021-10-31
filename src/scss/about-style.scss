@@ -1,0 +1,37 @@
+.about-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__img {
+        height: 83vh;
+        padding: 150px;
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    &__list {
+        position: relative;
+    }
+
+    &__item {
+        font-size: 20px;
+        font-weight: 400;
+        opacity: 0.6;
+        margin-top: 30px;
+
+        &::before {
+            content: "";
+            top: 12px;
+            width: 15px;
+            height: 15px;
+            left: -38px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: #569d59;
+        }
+    }
+}
